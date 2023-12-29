@@ -27,6 +27,3 @@ def show():
                 return render_template("weather.html",data=data['current'],show=1,day=day,img=img)
     except Exception as e:
          return str(e)
-
-if __name__=='__main__':
-    ob.run(debug=True,port=5000)
